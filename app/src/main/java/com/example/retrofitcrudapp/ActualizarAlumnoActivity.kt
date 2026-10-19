@@ -103,7 +103,7 @@ class ActualizarAlumnoActivity : AppCompatActivity() {
                             // Si la respuesta del servidor no es exitosa, manejar el error
                             try {
                                 val errorJson = response.errorBody()?.string()
-                                val errorObj = JSONObject(errorJson)
+                                val errorObj = JSONObject(errorJson ?: "")
                                 val errorMessage = errorObj.getString("message")
                                 Toast.makeText(
                                     this@ActualizarAlumnoActivity,
