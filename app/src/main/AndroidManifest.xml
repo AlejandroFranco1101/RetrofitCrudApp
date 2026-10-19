@@ -14,6 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RetrofitCrudApp">
         <activity
+            android:name=".ProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActualizarProfesorActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActualizarAlumnoActivity"
             android:exported="false" />
         <activity

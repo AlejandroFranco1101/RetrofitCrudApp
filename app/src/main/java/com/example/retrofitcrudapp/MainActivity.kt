@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val fab_agregar: FloatingActionButton = findViewById<FloatingActionButton>(R.id.fab_agregar)
+        val btnIrProfesores: android.widget.Button = findViewById(R.id.btnIrProfesores)
 
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
@@ -50,6 +51,11 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(getBaseContext(), CrearAlumnoActivity::class.java)
             startActivity(i)
         })
+
+        btnIrProfesores.setOnClickListener {
+            val i = Intent(getBaseContext(), ProfesorActivity::class.java)
+            startActivity(i)
+        }
     }
 
     override fun onResume() {
