@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RetrofitCrudApp">
         <activity
+            android:name=".ActualizarAlumnoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearAlumnoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
